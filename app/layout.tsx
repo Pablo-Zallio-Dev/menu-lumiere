@@ -1,5 +1,7 @@
+import { Metadata } from "next";
 import "./globals.css";
 import { EB_Garamond, Inter, Cormorant_Garamond } from "next/font/google";
+import { MenuHeader } from "./components/ui/MenuHeader";
 
 const garamond = EB_Garamond({
       subsets: ["latin"],
@@ -16,6 +18,11 @@ const cormorant = Cormorant_Garamond({
       variable: "--font-garamond",
 });
 
+export const metadata: Metadata = {
+      title: "Menu Lumiere",
+      description: "Carta del menu el restaurante lumiere",
+};
+
 export default function RootLayout({
       children,
 }: Readonly<{
@@ -26,8 +33,10 @@ export default function RootLayout({
                   lang="es"
                   className={` ${garamond.variable} ${inter.variable} ${cormorant.variable} bg-bg-background/50 scroll-smooth `}
             >
+                  <header className=" flex flex-col justify-center items-center ">
+                        <MenuHeader />
+                  </header>
                   <body>{children}</body>
             </html>
       );
 }
-

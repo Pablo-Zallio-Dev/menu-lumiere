@@ -3,11 +3,11 @@ import { LucideIcon, Fish, Nut, Milk, Wheat, Shell } from 'lucide-react';
 import React from 'react';
 
 const ICONS: Record<string, LucideIcon> = {
-  fish: Fish,
-  nuts: Nut,
-  dairy: Milk,
-  gluten: Wheat,
-  molluscs: Shell,
+      fish: Fish,
+      nuts: Nut,
+      dairy: Milk,
+      gluten: Wheat,
+      molluscs: Shell,
 };
 
 export type IconAlergenProps = {
@@ -17,17 +17,18 @@ export type IconAlergenProps = {
       size?: number
 }
 
-const IconAlergen: React.FC<IconAlergenProps> = ({ iconId, alergen, color='#8a7a55', size= 12 }) => {
+const IconAlergen: React.FC<IconAlergenProps> = ({ iconId, alergen, color = '#8a7a55', size = 12 }) => {
 
       const Icon = ICONS[iconId as keyof typeof ICONS];
 
 
       return (
             <>
-                  <section className=" flex flex-col items-center w-max  ">
+                  <section className=" flex flex-col items-center w-max  " role="img"
+                        aria-label={`Contiene ${alergen}`}>
 
                         <section className=" flex justify-center items-center w-6 h-6 rounded-full bg-bgIconAllergen ">
-                              <Icon color={color} size={size}/>
+                              <Icon color={color} size={size} />
                         </section>
                         <p className=" w-max text-center text-colorTextCategory text-10px font-semibold   ">
                               {alergen}

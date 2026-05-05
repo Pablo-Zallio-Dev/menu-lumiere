@@ -1,6 +1,6 @@
 import data from '@/data/data.json'
 
-import { MenuHeader } from "./components/ui/MenuHeader";
+//import { MenuHeader } from "./components/ui/MenuHeader";
 import { NumberCategory } from './components/ui/NumberCategory';
 import { TitleCategory } from './components/ui/TitleCategory';
 import { SubtitleCategory } from './components/ui/SubtitleCategory';
@@ -17,7 +17,7 @@ export default function Home() {
       return (
             <>
                   <section id='home' className="  flex flex-col justify-center items-center pb-18 ">
-                        <MenuHeader />
+                        
                         <LinksMenu />
                         <section className=" flex flex-wrap justify-center gap-2 ">
 
