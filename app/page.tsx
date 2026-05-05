@@ -16,8 +16,8 @@ const menuData = data as MenuData;
 export default function Home() {
       return (
             <>
-                  <section id='home' className="  flex flex-col justify-center items-center pb-18 ">
-                        
+                  <section  className="  flex flex-col justify-center items-center pb-18 ">
+
                         <LinksMenu />
                         <section className=" flex flex-wrap justify-center gap-2 ">
 
@@ -25,9 +25,10 @@ export default function Home() {
                         <section className=" w-full max-w-115 px-6 pt-12">
                               {
                                     menuData.categories.map((category) => (
-                                          <>
 
-                                                <section id={category.id} key={category.id} className=" py-4 ">
+                                          <section key={category.id} className="">
+
+                                                <section id={category.id} className=" py-4 ">
                                                       <section className="flex items-end gap-3 pb-1.5 mb-1">
                                                             <NumberCategory number={category.number} />
                                                             <TitleCategory text={category.name} />
@@ -41,21 +42,22 @@ export default function Home() {
                                                                         <DishName dish={dish.name} />
                                                                         <Price price={dish.price} />
                                                                   </section>
-                                                                        <DescriptionDish description={dish.description} />
-                                                                        <section className=" flex gap-3 ">
-                                                                              {
-                                                                                    dish.allergens.map((alergens) => (
-                                                                                          <IconAlergen key={alergens.id} alergen={alergens.name} iconId={alergens.id} />
-                                                                                    ))
-                                                                              }
-                                                                        </section>
+                                                                  <DescriptionDish description={dish.description} />
+                                                                  <section className=" flex gap-3 ">
+                                                                        {
+                                                                              dish.allergens.map((alergens) => (
+                                                                                    <IconAlergen key={alergens.id} alergen={alergens.name} iconId={alergens.id} />
+                                                                              ))
+                                                                        }
+                                                                  </section>
                                                             </section>
                                                       ))}
                                                       <section className=" py-8 ">
                                                             <BtnBack />
                                                       </section>
                                                 </section>
-                                          </>
+
+                                          </section>
                                     ))
                               }
                               <section className=" flex flex-col justify-center items-center gap-6 ">
@@ -64,9 +66,9 @@ export default function Home() {
                                           <p className=" font-bold ">Restaurante Lumiere</p>
                                           <p className="">Calle San Andres, Nº 20, Valencia</p>
                                           <section className=" flex gap-2 ">
-                                          <p className="">Tel: 96 658 64 62</p>
-                                          <p className="">-</p>
-                                          <p className="">www.lumiere.es</p>
+                                                <p className="">Tel: 96 658 64 62</p>
+                                                <p className="">-</p>
+                                                <p className="">www.lumiere.es</p>
                                           </section>
                                     </section>
                               </section>

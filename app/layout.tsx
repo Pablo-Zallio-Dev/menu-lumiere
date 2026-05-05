@@ -30,13 +30,16 @@ export default function RootLayout({
 }>) {
       return (
             <html
+            id='home'
                   lang="es"
                   className={` ${garamond.variable} ${inter.variable} ${cormorant.variable} bg-bg-background/50 scroll-smooth `}
             >
-                  <header className=" flex flex-col justify-center items-center ">
-                        <MenuHeader />
-                  </header>
-                  <body>{children}</body>
+                  <body>
+                        <header  className=" flex flex-col justify-center items-center ">
+                              <MenuHeader />
+                        </header>
+
+                        {children}</body>
             </html>
       );
 }

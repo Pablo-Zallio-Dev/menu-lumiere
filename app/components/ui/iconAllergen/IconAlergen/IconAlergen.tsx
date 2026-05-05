@@ -24,13 +24,13 @@ const IconAlergen: React.FC<IconAlergenProps> = ({ iconId, alergen, color = '#8a
 
       return (
             <>
-                  <section className=" flex flex-col items-center w-max  " role="img"
+                  <section className=" flex flex-col items-center pt-1.5 pb-2 w-max  " role="img"
                         aria-label={`Contiene ${alergen}`}>
 
                         <section className=" flex justify-center items-center w-6 h-6 rounded-full bg-bgIconAllergen ">
                               <Icon color={color} size={size} />
                         </section>
-                        <p className=" w-max text-center text-colorTextCategory text-10px font-semibold   ">
+                        <p className=" w-max text-center text-colorTextCategory/80 text-[11px] font-semibold   ">
                               {alergen}
                         </p>
                   </section>
