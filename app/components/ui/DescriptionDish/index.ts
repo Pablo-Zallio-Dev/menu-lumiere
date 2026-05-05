@@ -1,0 +1,1 @@
+export { default as DescriptionDish } from './DescriptionDish';

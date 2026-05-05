@@ -1,0 +1,1 @@
+export { default as NumberCategory } from './NumberCategory';

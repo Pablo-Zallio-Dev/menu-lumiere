@@ -1,65 +1,80 @@
-import Image from "next/image";
+import data from '@/data/data.json'
 
+import { MenuHeader } from "./components/ui/MenuHeader";
+import { NumberCategory } from './components/ui/NumberCategory';
+import { TitleCategory } from './components/ui/TitleCategory';
+import { SubtitleCategory } from './components/ui/SubtitleCategory';
+import { MenuData } from '@/data/types';
+import { DishName } from './components/ui/DishName';
+import { Price } from './components/ui/Price';
+import { LinksMenu } from './components/ui/LinksMenu';
+import { BtnBack } from './components/ui/BtnBack';
+import { DescriptionDish } from './components/ui/DescriptionDish';
+import { IconAlergen } from './components/ui/iconAllergen/IconAlergen';
+
+const menuData = data as MenuData;
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+      return (
+            <>
+                  <section id='home' className="  flex flex-col justify-center items-center pb-18 ">
+                        <MenuHeader />
+                        <LinksMenu />
+                        <section className=" flex flex-wrap justify-center gap-2 ">
+
+                        </section>
+                        <section className=" w-full max-w-115 px-6 pt-12">
+                              {
+                                    menuData.categories.map((category) => (
+                                          <>
+
+                                                <section id={category.id} key={category.id} className=" py-4 ">
+                                                      <section className="flex items-end gap-3 pb-1.5 mb-1">
+                                                            <NumberCategory number={category.number} />
+                                                            <TitleCategory text={category.name} />
+                                                      </section>
+                                                      <SubtitleCategory subtitle={category.subtitle} />
+                                                </section>
+                                                <section className="">
+                                                      {category.dishes.map((dish) => (
+                                                            <section key={dish.id} className=" flex flex-col py-5 border-b border-colorTextNumber/20 ">
+                                                                  <section className=" flex justify-between pb-2 ">
+                                                                        <DishName dish={dish.name} />
+                                                                        <Price price={dish.price} />
+                                                                  </section>
+                                                                        <DescriptionDish description={dish.description} />
+                                                                        <section className=" flex gap-3 ">
+                                                                              {
+                                                                                    dish.allergens.map((alergens) => (
+                                                                                          <IconAlergen key={alergens.id} alergen={alergens.name} iconId={alergens.id} />
+                                                                                    ))
+                                                                              }
+                                                                        </section>
+                                                            </section>
+                                                      ))}
+                                                      <section className=" py-8 ">
+                                                            <BtnBack />
+                                                      </section>
+                                                </section>
+                                          </>
+                                    ))
+                              }
+                              <section className=" flex flex-col justify-center items-center gap-6 ">
+                                    <p className=" tracking-widest font-semibold text-10px text-colorTextDescription/80 uppercase ">Innovación · Respeto · Sabor</p>
+                                    <section className=" flex flex-col items-center gap-1 pt-6 pb-10 text-10px font-inter text-colorTextDescription ">
+                                          <p className=" font-bold ">Restaurante Lumiere</p>
+                                          <p className="">Calle San Andres, Nº 20, Valencia</p>
+                                          <section className=" flex gap-2 ">
+                                          <p className="">Tel: 96 658 64 62</p>
+                                          <p className="">-</p>
+                                          <p className="">www.lumiere.es</p>
+                                          </section>
+                                    </section>
+                              </section>
+                        </section>
+                  </section>
+
+
+
+            </>
+      );
 }

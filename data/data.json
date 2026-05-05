@@ -1,0 +1,423 @@
+{
+      "categories": [
+            {
+                  "id": "cat-entrantes",
+                  "name": "Entrantes",
+                  "subtitle": "El preludio a la experiencia",
+                  "number": "01",
+                  "dishes": [
+                        {
+                              "id": "e1",
+                              "name": "Sinfonía de Vieiras",
+                              "price": "28",
+                              "description": "Vieiras selladas con emulsión de azafrán y coral crujiente.",
+                              "allergens": [
+                                    {
+                                          "id": "molluscs",
+                                          "name": "Moluscos"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e2",
+                              "name": "Carpaccio de Wagyu",
+                              "price": "32",
+                              "description": "Láminas de Wagyu A5, trufa negra y aceite de oliva virgen.",
+                              "allergens": [
+                                    {
+                                          "id": "nuts",
+                                          "name": "Frutos Secos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e3",
+                              "name": "Tartar de Atún Rojo",
+                              "price": "26",
+                              "description": "Atún de almadraba, aguacate ahumado y perlas de lima.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Pescado"
+                                    },
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e4",
+                              "name": "Burrata de Puglia",
+                              "price": "22",
+                              "description": "Burrata artesanal, pesto de pistacho y tomate cherry confitado.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    },
+                                    {
+                                          "id": "nuts",
+                                          "name": "Frutos Secos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e5",
+                              "name": "Foie Gras Micuit",
+                              "price": "29",
+                              "description": "Foie artesanal, reducción de Sauternes y pan de especias.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e6",
+                              "name": "Alcachofas Confitadas",
+                              "price": "20",
+                              "description": "Corazones de alcachofa, lascas de jamón ibérico y crema de queso.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e7",
+                              "name": "Ceviche de Corvina",
+                              "price": "24",
+                              "description": "Corvina fresca, leche de tigre de maracuyá y cilantro.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Pescado"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "e8",
+                              "name": "Gambas al Ajillo Modernas",
+                              "price": "27",
+                              "description": "Gambas blancas, aire de ajo asado y aceite de guindilla.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Crustáceos"
+                                    }
+                              ]
+                        }
+                  ]
+            },
+            {
+                  "id": "cat-principales",
+                  "name": "Platos Principales",
+                  "subtitle": "El núcleo de nuestra cocina",
+                  "number": "02",
+                  "dishes": [
+                        {
+                              "id": "p1",
+                              "name": "Lubina Salvaje",
+                              "price": "45",
+                              "description": "Lomo de lubina, velouté de hinojo y espárragos trigueros.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Pescado"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p2",
+                              "name": "Solomillo de Ternera",
+                              "price": "48",
+                              "description": "Ternera madurada 45 días, puré parmentier y jugo de carne.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p3",
+                              "name": "Bacalao Skrei",
+                              "price": "38",
+                              "description": "Bacalao a baja temperatura, pil-pil de sus pieles y pimientos fritos.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Pescado"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p4",
+                              "name": "Cordero Lechal",
+                              "price": "42",
+                              "description": "Costillar de cordero, costra de hierbas y gratín de patata.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p5",
+                              "name": "Arroz de Marisco",
+                              "price": "36",
+                              "description": "Arroz meloso, carabineros y alioli de plancton.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Crustáceos"
+                                    },
+                                    {
+                                          "id": "molluscs",
+                                          "name": "Moluscos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p6",
+                              "name": "Magret de Pato",
+                              "price": "34",
+                              "description": "Magret braseado, salsa de frutos rojos y puré de manzana.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "p7",
+                              "name": "Turbot al Horno",
+                              "price": "46",
+                              "description": "Rodaballo salvaje, patatas panadera y refrito tradicional.",
+                              "allergens": [
+                                    {
+                                          "id": "fish",
+                                          "name": "Pescado"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p8",
+                              "name": "Entrecot de Black Angus",
+                              "price": "52",
+                              "description": "Corte premium a la parrilla con pimientos del piquillo.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "p9",
+                              "name": "Pasta con Trufa Blanca",
+                              "price": "40",
+                              "description": "Tagliatelle frescos, mantequilla de trufa y parmesano 24 meses.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p10",
+                              "name": "Pulpo a la Brasa",
+                              "price": "35",
+                              "description": "Pulpo gallego, crema de patata ahumada y pimentón de la Vera.",
+                              "allergens": [
+                                    {
+                                          "id": "molluscs",
+                                          "name": "Moluscos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "p11",
+                              "name": "Cochinillo Crujiente",
+                              "price": "39",
+                              "description": "Cochinillo confitado, piel crujiente y chutney de piña.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "p12",
+                              "name": "Risotto de Setas",
+                              "price": "30",
+                              "description": "Arroz carnaroli, variedad de setas silvestres y aceite de trufa.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        }
+                  ]
+            },
+            {
+                  "id": "cat-postres",
+                  "name": "Postres",
+                  "subtitle": "El clímax dulce",
+                  "number": "03",
+                  "dishes": [
+                        {
+                              "id": "d1",
+                              "name": "Esfera de Chocolate",
+                              "price": "14",
+                              "description": "Mousse de chocolate 70%, núcleo de praliné y tierra de cacao.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    },
+                                    {
+                                          "id": "nuts",
+                                          "name": "Frutos Secos"
+                                    },
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "d2",
+                              "name": "Torrija Caramelizada",
+                              "price": "12",
+                              "description": "Pan brioche infusionado en leche de coco y helado de vainilla.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "d3",
+                              "name": "Lemon Pie Moderno",
+                              "price": "11",
+                              "description": "Crema de limón siciliano, merengue suizo y base sablée.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "d4",
+                              "name": "Cheesecake de Gorgonzola",
+                              "price": "13",
+                              "description": "Tarta de queso cremosa con toque de queso azul y miel.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "d5",
+                              "name": "Milhojas de Crema",
+                              "price": "12",
+                              "description": "Hojaldre invertido, crema diplomática y frambuesas frescas.",
+                              "allergens": [
+                                    {
+                                          "id": "gluten",
+                                          "name": "Gluten"
+                                    },
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        },
+                        {
+                              "id": "d6",
+                              "name": "Sorbetes Artesanos",
+                              "price": "10",
+                              "description": "Selección de frutas de temporada: Mango, Frambuesa y Limón.",
+                              "allergens": []
+                        }
+                  ]
+            },
+            {
+                  "id": "cat-bebidas",
+                  "name": "Bebidas",
+                  "subtitle": "Para saciar la sed",
+                  "number": "04",
+                  "dishes": [
+                        {
+                              "id": "b1",
+                              "name": "Vino Tinto Reserva",
+                              "price": "12",
+                              "description": "Copa de D.O. Rioja, notas de madera y frutos rojos.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "b2",
+                              "name": "Champagne Brut",
+                              "price": "18",
+                              "description": "Copa de Champagne francés, burbuja fina y elegante.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "b3",
+                              "name": "Cocktail Lumière",
+                              "price": "15",
+                              "description": "Ginebra premium, infusión de hibisco y tónica botánica.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "b4",
+                              "name": "Agua Mineral Premium",
+                              "price": "6",
+                              "description": "Agua de manantial volcánico, 500ml.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "b5",
+                              "name": "Café de Especialidad",
+                              "price": "4",
+                              "description": "Grano arábica de origen seleccionado, tostado artesanal.",
+                              "allergens": []
+                        },
+                        {
+                              "id": "b6",
+                              "name": "Té Matcha Ceremonial",
+                              "price": "7",
+                              "description": "Té verde japonés batido tradicionalmente.",
+                              "allergens": [
+                                    {
+                                          "id": "dairy",
+                                          "name": "Lácteos"
+                                    }
+                              ]
+                        }
+                  ]
+            }
+      ]
+}
